@@ -2,9 +2,9 @@ document.getElementById('domainForm').addEventListener('submit', function(event)
     event.preventDefault();
     const domainName = document.getElementById('domainName').value;
     const domainSuffix = document.getElementById('domainSuffix').value;
-    const apiUrl = `https://whois.freeaiapi.xyz/?name=${domainName}&suffix=${domainSuffix}`;
-
-    fetch(apiUrl)
+    const proxyUrl = `/api/whois?name=${domainName}&suffix=${domainSuffix}`;
+    console.log('proxyUrl:', proxyUrl);
+    fetch(proxyUrl)
         .then(response => response.json())
         .then(data => {
             const resultDiv = document.getElementById('result');

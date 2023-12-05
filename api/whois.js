@@ -1,5 +1,4 @@
-const fetch = require('node-fetch');
-
+import fetch from 'node-fetch';
 module.exports = async (req, res) => {
     const { name, suffix } = req.query;
     try {

@@ -1,7 +1,21 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/sa08R99avC9
--->
-<section class="w-full py-12 md:py-24 lg:py-32"><div class="container px-4 md:px-6"><div class="flex flex-col items-center space-y-4 text-center"><div class="space-y-2"><h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-    GeFei
-  </h1></div></div></div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Checker</title>
+</head>
+<body>
+    <section style="text-align: center; padding: 20px;">
+        <h1>Domain Checker</h1>
+        <form id="domainForm">
+            <input type="text" id="domainName" placeholder="Domain Name (e.g., google)">
+            <input type="text" id="domainSuffix" placeholder="Suffix (e.g., com)">
+            <button type="submit">Check</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <script src="domainChecker.js"></script>
+</body>
+</html>

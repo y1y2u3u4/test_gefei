@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
-module.exports = async (req, res) => {
+
+export default async function (req, res) {
     const { name, suffix } = req.query;
     try {
         const response = await fetch(`https://whois.freeaiapi.xyz/?name=${name}&suffix=${suffix}`);
@@ -11,4 +12,4 @@ module.exports = async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
-};
+}
